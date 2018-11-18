@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { FwbaseRoutingModule } from './fwbase-routing.module';
 import { CoreModule } from './modules/core/core.module';
 import { UtilModule } from './modules/util/util.module';
+import { CommonModule } from '@angular/common';  
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -9,6 +10,7 @@ const fwModules = [
   FwbaseRoutingModule,
   CoreModule,
   UtilModule,
+  CommonModule,
   BrowserModule,
   BrowserAnimationsModule
 ];

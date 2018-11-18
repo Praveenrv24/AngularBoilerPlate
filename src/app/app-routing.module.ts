@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadingStrategy } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ResolverService } from './services/resolver.service';
+import { PagenotfoundComponent } from '../fwbase/modules/util/components/pagenotfound/pagenotfound.component';
 const groupRoutes = [
   // {
   //   path: '',
@@ -39,7 +40,7 @@ const routes: Routes = [
   // },
   {
     path: '**',
-    redirectTo: '/404'
+    component: PagenotfoundComponent
   },
   ...groupRoutes
 
