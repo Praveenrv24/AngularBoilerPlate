@@ -18,7 +18,7 @@ const Modules = [
 @NgModule({
   imports:      [ BrowserModule, FormsModule, ...Modules ],
   declarations: [ AppComponent, ...baseComponents ],
-  entryComponents: [LandingComponent],
+  entryComponents: [...baseComponents],
   exports: [],
   bootstrap:    [ AppComponent ],
   providers: []

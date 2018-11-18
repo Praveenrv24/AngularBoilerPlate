@@ -19,6 +19,7 @@ const coreArray = [
     ...coreArray,
     FooterComponent
   ],
+  entryComponents: [],
   exports: [
     ...coreArray
   ],

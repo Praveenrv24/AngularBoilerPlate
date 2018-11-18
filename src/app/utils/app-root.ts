@@ -1,5 +1,8 @@
 
 import { ActivatedRoute, Router } from '@angular/router';
-export class AppRoot {
-  constructor() {}
+import { Root } from '../../fwbase/modules/core/root/root';
+export class AppRoot extends Root {
+  constructor() {
+    super();
+  }
 }

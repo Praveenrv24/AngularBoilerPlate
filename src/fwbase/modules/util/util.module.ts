@@ -13,6 +13,9 @@ const utilArray = [
   declarations: [
     PagenotfoundComponent
   ],
+  entryComponents: [
+   // PagenotfoundComponent
+  ],
   exports: [
     ...utilArray
   ],
