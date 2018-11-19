@@ -1,2 +1,1 @@
-# framework
-Framework angular  6
+# Angular Seed
