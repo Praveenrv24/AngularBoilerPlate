@@ -7,7 +7,8 @@ import { FooterComponent } from './components/footer/footer.component';
 
 const coreArray = [
   FrameRootComponent,
-  HeaderComponent
+  HeaderComponent,
+  FooterComponent
 ];
 
 @NgModule({
@@ -16,8 +17,7 @@ const coreArray = [
     FwbaseRoutingModule
   ],
   declarations: [
-    ...coreArray,
-    FooterComponent
+    ...coreArray
   ],
   entryComponents: [],
   exports: [

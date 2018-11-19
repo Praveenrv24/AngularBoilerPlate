@@ -1,7 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -18,12 +18,11 @@
       "dom"
     ],
     "paths": {
-      "@env/*": ["./../environments/*"],
-      "@frame/*": ["./../fwbase/*"],
-      "@frame/modules/*": ["./../fwbase/modules/*"],
-      "@frame/components/*": ["./../fwabse/modules/core/components/*"],
-      "@frame/services/*": ["./../fwabse/modules/core/services/*"],
-      "@frame/root/*": ["./../fwbase/modules/core/root/*"]
+      "@env/*": ["environments/*"],
+      "@frame/*": ["fwbase/*"],
+      "@frame/root/*": ["fwbase/modules/core/root/*"],
+      "@frame/components/*": ["fwbase/modules/core/components/*"],
+      "@frame/services/*": ["fwbase/modules/core/services/*"]
 
     }
   }

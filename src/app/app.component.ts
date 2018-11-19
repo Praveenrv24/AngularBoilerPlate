@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AppService } from './../fwbase/modules/core/services/app.service';
+import { AppService } from '@frame/services/app.service';
 
 
 @Component({
