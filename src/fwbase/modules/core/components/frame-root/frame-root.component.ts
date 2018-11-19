@@ -8,8 +8,8 @@ import { AppService } from '../../services/app.service';
   styleUrls: ['./frame-root.component.css']
 })
 export class FrameRootComponent implements OnInit {
-  isHeaderEnabled;
-  isFooterEnabled;
+  isHeaderEnabled = true;
+  isFooterEnabled = true;
 
   constructor(private appService: AppService,
               public cd: ChangeDetectorRef

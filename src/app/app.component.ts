@@ -12,13 +12,13 @@ export class AppComponent  {
   constructor(private appService: AppService) { }
 
   ngOnInit() {
-    this.manageLayout();
+    // this.manageLayout(); // uncomment for managing the header and footer
   }
   
+  // Method for controlling header and footer
   manageLayout(){
-    this.appService.showHeader(true);
-    this.appService.showFooter(true);
-
+    this.appService.showHeader(false);
+    this.appService.showFooter(false);
   }
   
 }
