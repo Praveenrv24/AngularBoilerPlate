@@ -41,7 +41,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "build:prod": "ng build --prod",
+    "build:dev": "ng build --configuration=dev --prod --aot ",
+    "build:prod": "ng build --configuration=production --prod --aot",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
