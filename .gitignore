@@ -1,1 +1,2 @@
+# to create gitignore use "touch .gitignore" from git bash and add the files or folders to be ignored
 node_modules/
