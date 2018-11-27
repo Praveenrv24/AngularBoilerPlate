@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Optional, SkipSelf } from '@angular/core';
 import { FwbaseRoutingModule } from './fwbase-routing.module';
 import { CoreModule } from './modules/core/core.module';
 import { UtilModule } from './modules/util/util.module';
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -29,4 +29,12 @@ const fwExposed = [];
   ],
   providers: []
 })
-export class FwbaseModule { }
+export class FwbaseModule {
+  construnctor(
+    @Optional() @SkipSelf() fwbaseModule: FwbaseModule) {
+    if (fwbaseModule) {
+      throw new Error("Fwbase Module Already imported");
+    }
+  }
+
+}

@@ -4,7 +4,7 @@ import { PagenotfoundComponent } from './modules/util/components/pagenotfound/pa
 
 const routes: Routes = [
   {
-    path: '404',
+    path: 'pagenotfound',
     component: PagenotfoundComponent
   }
 ];

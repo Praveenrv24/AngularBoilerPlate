@@ -39,7 +39,7 @@ const routes: Routes = [
   //   canActivate: [EMSGuard]
   // },
   {
-    path: '**',
+    path: '***',
     component: PagenotfoundComponent
   },
   ...groupRoutes
