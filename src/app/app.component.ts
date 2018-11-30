@@ -7,7 +7,6 @@ import { AppService } from '@frame/services/app.service';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent {
-
   constructor(private appService: AppService) { }
 
   ngOnInit() {
