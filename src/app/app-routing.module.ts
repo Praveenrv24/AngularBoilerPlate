@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadingStrategy } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { ResolverService } from './services/resolver.service';
-import { PagenotfoundComponent } from '../fwbase/modules/util/components/pagenotfound/pagenotfound.component';
+import { PagenotfoundComponent } from '@frame/modules/util/components/pagenotfound/pagenotfound.component';
 const groupRoutes = [
   // {
   //   path: '',
@@ -27,6 +27,10 @@ const routes: Routes = [
    // canActivate: [EMSGuard]
   },
   {
+    path: '**',
+    component: PagenotfoundComponent
+  },
+  {
     path: ':group',
     children: [
       ...childRoutes
@@ -38,11 +42,7 @@ const routes: Routes = [
   //   resolve: [ResolverService],
   //   canActivate: [EMSGuard]
   // },
-  {
-    path: '**',
-    //component: PagenotfoundComponent
-    redirectTo : '/pagenotfound'
-  },
+ 
   ...groupRoutes
 
 ];
